@@ -12,6 +12,7 @@ jetbrainsKotlinJvm = "2.0.21"
 lintApi = "31.4.0"
 lintTests = "31.4.0"
 kotlinxSerialization = "1.8.0"
+#jitpackPlugin = "your-plugin-version"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,6 +33,7 @@ lint-api = { group = "com.android.tools.lint", name = "lint-api", version.ref = 
 lint-tests = { group = "com.android.tools.lint", name = "lint-tests", version.ref = "lintTests" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
 kotlinx-serialization-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-core", version.ref = "kotlinxSerialization" }
+#jitpack = { id = "com.github.your-username.your-repo", version.ref = "jitpackPlugin" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

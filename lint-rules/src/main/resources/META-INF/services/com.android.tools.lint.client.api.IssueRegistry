@@ -1,0 +1,2 @@
+# src/main/resources/META-INF/services/com.android.tools.lint.client.api.IssueRegistry
+com.helpfullintrules.lint_rules.AndroidCustomLintIssueRegistry

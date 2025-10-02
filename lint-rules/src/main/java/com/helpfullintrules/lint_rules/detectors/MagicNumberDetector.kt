@@ -17,7 +17,7 @@ class MagicNumberDetector : Detector(), Detector.UastScanner {
     companion object {
         private val TAG = MagicNumberDetector::class.java.simpleName
 
-        private val ISSUE = Issue.create(
+        val ISSUE = Issue.create(
             id = "MagicNumberUsage",
             briefDescription = "Avoid using magic numbers",
             explanation = "Hardcoded numbers that are used multiple times or represent important values should be extracted into constants for better maintainability.",

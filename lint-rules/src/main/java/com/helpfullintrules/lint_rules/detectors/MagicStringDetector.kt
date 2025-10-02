@@ -16,7 +16,7 @@ class MagicStringDetector : Detector(), Detector.UastScanner {
     companion object {
         private val TAG = MagicStringDetector::class.java.simpleName
 
-        private val ISSUE = Issue.create(
+        val ISSUE = Issue.create(
             id = "MagicStringUsage",
             briefDescription = "Avoid using magic strings",
             explanation = "Hardcoded strings that are used multiple times or represent important values should be extracted into string resources or constants for better maintainability and localization.",

@@ -20,6 +20,8 @@ dependencies {
     compileOnly(libs.lint.api)
     testImplementation(libs.lint.tests)
     implementation(libs.kotlinx.serialization.json)
+    implementation(libs.json.schema.validator)
+    implementation(libs.gson)
 }
 tasks.jar {
     manifest {

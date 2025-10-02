@@ -1,5 +1,6 @@
 [versions]
 agp = "8.11.2"
+jsonSchemaValidator = "0.5.2"
 kotlin = "2.0.21"
 coreKtx = "1.17.0"
 junit = "4.13.2"
@@ -12,10 +13,12 @@ jetbrainsKotlinJvm = "2.0.21"
 lintApi = "31.4.0"
 lintTests = "31.4.0"
 kotlinxSerialization = "1.8.0"
+gson = "2.13.2"
 #jitpackPlugin = "your-plugin-version"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+json-schema-validator = { module = "io.github.optimumcode:json-schema-validator", version.ref = "jsonSchemaValidator" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -33,6 +36,7 @@ lint-api = { group = "com.android.tools.lint", name = "lint-api", version.ref = 
 lint-tests = { group = "com.android.tools.lint", name = "lint-tests", version.ref = "lintTests" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
 kotlinx-serialization-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-core", version.ref = "kotlinxSerialization" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 #jitpack = { id = "com.github.your-username.your-repo", version.ref = "jitpackPlugin" }
 
 [plugins]

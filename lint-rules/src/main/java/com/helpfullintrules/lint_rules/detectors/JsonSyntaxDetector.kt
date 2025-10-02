@@ -26,7 +26,7 @@ class JsonSyntaxDetector: Detector(), OtherFileScanner {
     companion object {
         private val TAG = JsonSyntaxDetector::class.java.simpleName
 
-        private val ISSUE = Issue.create(
+        val ISSUE = Issue.create(
             id = INVALID_JSON_ASSET_ID,
             briefDescription = "Checks for invalid JSON files in the assets directory",
             explanation = "JSON assets should be valid and follow a specific format. " +
